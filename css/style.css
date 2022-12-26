@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* 手機板 top-------------------------------------------------------------- */
 .sm-top{
   position: fixed;
   background: white;
@@ -13,7 +14,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   display: flex;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sm-top span{
@@ -61,20 +62,58 @@
   position: absolute;
   top: 8px;
 }
-
+/* 隱藏 menu -------------------------------------------------------- */
 .menu{
-width: 70%;
-height: 100vh;
-background: white;
-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-position:fixed;
-z-index: 1;
-left: -0%;
+  top: 50px;
+  width: 70%;
+  height: 100vh;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position:fixed;
+  z-index: 2;
+  left: -70%;
+
+}
+.menu .box{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.menu a{
+  font-family: '微軟正黑體';
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+  padding:15px 15px 15px 30px;
+  display: block;
+  transition: 0.5s;
+  /* background: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a:hover{
+  background: rgb(240,75,90);
+  color: white;
 }
 
+.menu .box span{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background:rgba(0,0,0,0.3);
+  text-align: center;
+  transition: 0.7s;
+}
 
+.menu .box span:hover{
+  background: white;
+  color: gray;
+}
+
+/* 內容01-------------------------------------------------------- */
 #container01{
-  z-index: -2;
   height: 60vh;
   box-sizing: border-box;
   position: relative;
@@ -100,7 +139,12 @@ left: -0%;
 
 
 .t-left a{
-  font-size: 50px;
+  font-size: 45px;
+}
+
+.t-left i{
+  color: rgb(240,75,90);
+  padding: 0 10px 0 0;
 }
 
 .t-right a{
@@ -115,20 +159,21 @@ left: -0%;
 .t-right a:hover{
   color: rgb(240,75,90);
 }
+
+/* 內容 fb 等 icon */
 .icons{
   position: absolute;
   display: flex;
   top: 150px;
 }
 
-.icons::before{
+.icon-line{
   content: '';
   position: absolute;
   width: 280px;
   border: 1px solid rgb(195, 195, 195);
-  top: 50%;
+  top: 172px;
   transform: translateY(-50%);
-  z-index: -1;
 }
 
 .icons a{
@@ -142,6 +187,12 @@ left: -0%;
   background:rgb(236,242,238);
 }
 
+.icons a:hover{
+  background: black;
+  color: white;
+}
+
+/* 內容文字區 */
 #container01 .contant{
   position: absolute;
   top: 45%;
@@ -180,11 +231,32 @@ left: -0%;
   font-size: 30px;
 }
 
+/* 內容02-------------------------------------------------------- */
+
 #container02{
-  height: 100vh;
+  height: 88vh;
   box-sizing: border-box;
   position: relative;
   background: rgb(55,50,70);
+}
+
+#container02 .box{
+  padding: 30px 20px 0 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#container02 .box h1{
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container02 .box p{
+  color:gray;
+  margin-bottom: 20px;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
 }
 
 @media (min-width:376px) {
