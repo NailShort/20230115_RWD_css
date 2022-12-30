@@ -71,7 +71,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   position:fixed;
   z-index: 2;
-  left: -70%;
+  left: 0%;
 
 }
 .menu .box{
@@ -245,6 +245,9 @@
   padding: 30px 20px 0 20px;
   height: 100%;
   box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 415px;
   position: relative;
 }
 
@@ -315,24 +318,21 @@
   background: var(--swiper-pagination-bullet-inactive-color, rgb(55,50,70));
 } */
 
-/* 內容02-------------------------------------------------------- */
+/* 內容03-------------------------------------------------------- */
 
 #container03{
-  height: 75vh;
-  box-sizing: border-box;
-  position: relative;
   background: url(../images/container02-bg.png) no-repeat center/cover;
+  width: 100%;
   position: relative;
+  padding: 50px 0 ;
 }
 
 #container03 .box{
-  width: 90%;
-  height: 75%;
-  /* border: 1px solid red; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-45%);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 300px;
 }
 
 #container03 .box h1{
@@ -372,6 +372,77 @@
   font-weight: 900;
   font-size: 20px;
 }
+
+/* 內容05-------------------------------------------------------- */
+#container05{
+  width: 100%;
+  position: relative;
+  padding: 50px 0 ;
+  text-align: center;
+}
+
+
+#container05  h1{
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+#container05 .box{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 300px;
+}
+
+#container05  p{
+  margin-bottom: 30px;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
+  color: gray;
+}
+
+#container05  .read-box{
+  margin-top: 100px;
+  width: 150px;
+  height: 55px;
+  background: rgb(240,75,90);
+  text-align: center;
+  display: block;
+  line-height: 55px;
+  margin: auto;
+}
+
+#container05  .read-box:hover{
+  background: rgb(255,55,70);
+  transition: 0.5s;
+}
+
+#container05 .read-box a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* 內容05-------------------------------------------------------- */
+#container06{
+  width: 100%;
+  position: relative;
+  padding: 50px 0 ;
+  text-align: center;
+}
+
+.box{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 300px;
+}
+
 
 /* 505 以上-------------------------------------------- */
 @media (min-width:505px) {
