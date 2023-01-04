@@ -71,7 +71,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   position:fixed;
   z-index: 2;
-  left: 0%;
+  left: -70%;
 
 }
 .menu .box{
@@ -427,15 +427,184 @@
   font-size: 20px;
 }
 
-/* 內容05-------------------------------------------------------- */
+/* 內容06-------------------------------------------------------- */
 #container06{
   width: 100%;
   position: relative;
   padding: 50px 0 ;
   text-align: center;
+  background: url(../images/parallax3.jpg) no-repeat center/cover;
 }
 
-.box{
+#container06 h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#container06 .text-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#container06 .text-box .num{
+  width: 50%;
+  margin-top: 60px;
+}
+
+#container06 .text-box .line01{
+  contain: '';
+  position: absolute;
+  width: 1px;
+  height: 185px;
+  background: lightgray;
+  top: 30px;
+}
+
+#container06 .text-box .line02{
+  contain: '';
+  position: absolute;
+  width: 1px;
+  height: 185px;
+  background: lightgray;
+  top: 245px;
+}
+
+#container06 .text-box .num h1{
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 100;
+}
+
+#container06 .text-box .num p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: grey;
+  margin-top: 25px;
+}
+
+#container06  .read-box{
+  margin-top: 70px;
+  width: 150px;
+  height: 55px;
+  background: rgb(240,75,90);
+  text-align: center;
+  display: block;
+  line-height: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#container06  .read-box:hover{
+  background: rgb(255,55,70);
+  transition: 0.5s;
+}
+
+#container06 .read-box a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* 內容07-------------------------------------------------------- */
+#container07{
+  width: 100%;
+  position: relative;
+  padding: 50px 0 ;
+  background: rgb(55,50,70);
+}
+
+#container07 .box h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#container07 .box .img-box{
+  width: 98%;
+  height: auto;
+  margin: auto;
+}
+
+#container07 .box .img-box img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#container07 .box .news{
+  width: 90%;
+  margin: auto;
+}
+
+#container07 .box a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#container07 .box p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: gray;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#container07  .read-box{
+  width: 150px;
+  height: 55px;
+  background: rgb(240,75,90);
+  text-align: center;
+  display: block;
+  line-height: 55px;
+  margin-left: 30px;
+}
+
+#container07  .read-box:hover{
+  background: rgb(255,55,70);
+  transition: 0.5s;
+}
+
+#container07 .read-box a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* 內容08-------------------------------------------------------- */
+
+#container08{
+  width: 100%;
+  position: relative;
+  padding: 50px 0 ;
+}
+
+
+#container08  h1{
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+}
+#container08 .box{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -443,9 +612,118 @@
   min-width: 300px;
 }
 
+#container08  p{
+  margin-bottom: 30px;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
+  color: gray;
+}
+
+#container08  .read-box{
+  width: 150px;
+  height: 55px;
+  background: rgb(240,75,90);
+  text-align: center;
+  display: block;
+  line-height: 55px;
+}
+
+#container08  .read-box:hover{
+  background: rgb(255,55,70);
+  transition: 0.5s;
+}
+
+#container08 .read-box a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+/* 內容09-------------------------------------------------------- */
+
+#container09{
+  width: 100%;
+  height: 50vh;
+}
+#container09 .box iframe{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 內容010-------------------------------------------------------- */
+#container010{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  padding: 50px 0 ;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container010 .box{
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  padding: 50px 0 ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#container010  .box .data{
+  width: 100%;
+margin: 20px 0;
+}
+
+#container010  .box .data h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#container010  .box .data h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#container010  .box .data p{
+  font-size: 14px;
+  color: gray;
+  line-height: 25px;
+}
+
+#container010  .box .data a{
+  font-size: 14px;
+  color: gray;
+  line-height: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#container010  .box .data a:hover{
+  color: rgb(240,75,90);
+  transition: 0.5s;
+}
+
+#container010  h3{
+  font-size: 16px;
+  color: gray;
+  font-weight: 100;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* 505 以上-------------------------------------------- */
-@media (min-width:505px) {
+@media (min-width:765px) {
+  .sm-top{
+    display: none;
+  }
+
   .top{
     display: flex;
     justify-content: space-around;
@@ -459,8 +737,78 @@
   #container01{
     height: 100vh;
   }
+
+  .icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 400px;
+    left: 40px;
+  }
+
+  .icons a{
+    margin-bottom: 10px;
+  }
+
+  .icon-line{
+    top: 540px;
+    left:66px;
+    width: 0;
+    height: 320px;
+  }
+
+  #container01 .contant{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+  .contant .text-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 80%;
+  }
+  .contant .text-3{
+    width: 250px;
+    height: 70px;
+  }
+  .contant .text-3 a{
+    font-size: 44px;
+    line-height: 70px;
+  }
+
+  /* 輪播 */
+
+  #container02{
+    height: 100vh;
+  }
+  #container02 .box{
+    padding: 50px 80px 0 80px;
+  }
+  #container02 .box h1{
+  font-size: 50px;
+  }
+  #container02 .box p{
+    margin-bottom: 50px;
+  }
+
+  /* 內容03 */
+  #container03{
+    height: 100vh;
+  }
+  #container03 .box{
+width: 400px;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateY(-50%);
+  }
 }
 
-@media (min-width:768px) {
+
+/* 994 以上-------------------------------------------- */
+@media (min-width:994px) {
   
 }
