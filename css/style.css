@@ -27,6 +27,22 @@
   display: block;
 }
 
+/* navbar */
+.xl-top{
+  position: fixed;
+  background: white;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 60px;
+  /* top: -60; */
+  z-index: 5;
+  display: none;
+}
+
+.xl-top .top{
+  height: 60px;
+  line-height: 60px;
+}
 .top-menu{
   width: 40px;
   height: 40px;
@@ -41,6 +57,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: 0.5s;
+}
+.top-menu .menu-icon2{
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  opacity: 0;
+  transform: rotate(-180deg);
+  transition: 0.5s;
 }
 
 .top-menu .menu-icon::after{
@@ -72,13 +97,29 @@
   position:fixed;
   z-index: 2;
   left: -70%;
-
+  transition: 0.5s;
+}
+.menu-0{
+  left: 0%;
 }
 .menu .box{
   padding-top: 30px;
   display: flex;
   flex-direction: column;
 }
+
+.a-box{
+  display: none;
+  transition: 0.5s;
+  display: none;
+  padding-left: 20px;
+}
+
+.a-box-b{
+  display: block;
+  transition: 0.5s;
+}
+
 .menu a{
   font-family: '微軟正黑體';
   color: gray;
@@ -473,6 +514,16 @@
   top: 245px;
 }
 
+#container06 .text-box .line03{
+  contain: '';
+  position: absolute;
+  width: 1px;
+  height: 185px;
+  background: lightgray;
+  top: 245px;
+  display: none;
+}
+
 #container06 .text-box .num h1{
   font-size: 80px;
   font-family: serif;
@@ -527,6 +578,7 @@
   font-weight: 900;
   color: white;
   margin-bottom: 30px;
+  padding-left: 25px;
 }
 
 #container07 .box .img-box{
@@ -649,8 +701,7 @@
   height: 50vh;
 }
 #container09 .box iframe{
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 
 /* 內容010-------------------------------------------------------- */
@@ -720,6 +771,9 @@ margin: 20px 0;
 
 /* 505 以上-------------------------------------------- */
 @media (min-width:765px) {
+  .xl-top{
+    display: block;
+  }
   .sm-top{
     display: none;
   }
@@ -798,17 +852,278 @@ margin: 20px 0;
     height: 100vh;
   }
   #container03 .box{
-width: 400px;
-height: auto;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateY(-50%);
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* 內容05 */
+  #container05{
+    padding: 150px 0 ;
+  }
+  #container05  h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  #container05  p{
+    margin-bottom: 50px;
+  }
+
+  /* 內容06 */
+  #container06{
+    height: 100vh;
+  }
+  #container06 h1{
+    margin-top: 400px;
+    font-size: 50px;
+  }
+  #container06 .text-box{
+
+  }
+  #container06 .text-box .num{
+    width: 25%;
+    margin-top: 0px;
+  }
+
+  #container06 .text-box .num h1{
+  margin-top: 50px;
+  }
+
+  #container06 .text-box .line01{
+    top: 30px;
+    left: 25%;
+  }
+  #container06 .text-box .line02{
+    top: 30px;
+    left: 75%;
+  }
+  #container06 .text-box .line03{
+    display: block;
+    top: 30px;
+    left: 50%;
+  }
+
+  /* 內容7 */
+  #container07{
+    padding: 200px 0;
+  }
+  #container07 .box h1{
+    font-size: 50px;
+    padding-left: 25px;
+  }
+
+  #container07 .box .img-box{
+    width: 99%;
+  }
+  #container07 .box .news{
+    width: 95%;
+  }
+
+
+  /* 內容8 */
+  #container08{
+    padding: 400px 0 ;
+  }
+
+  #container08  h1{
+    font-size: 80px;
+    line-height: 65px;
+  }
+
+  #container08  .read-box{
+    width: 260px;
+    height: 74px;
+  }
+
+  #container08 .read-box a{
+    font-size: 46px;
+    line-height: 74px;
+  }
+
+  #container08 .box{
+    padding-left: 30px;
+  }
+
+  /* 內容10 */
+  #container010{
+    height: 70vh;
+  }
+
+  #container010 h1{
+    margin-top: 50px;
+    font-size: 50px;
+  }
+
+  #container010 .box{
+    padding:0 ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container010  .box .data{
+    width: 30%;
+    margin-top: 100px;
+  }
+
+  #container010  h3{
+    bottom: 150px;
   }
 }
 
 
 /* 994 以上-------------------------------------------- */
 @media (min-width:994px) {
-  
+
+  .icons{
+    left: 60px;
+  }
+  .icon-line{
+    left:86px;
+  }
+
+  #container01 .contant{
+    position: absolute;
+    top: 60%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    }
+  .contant .text-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 80%;
+  }
+
+  /* 輪播 */
+  #container02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container02 .box{
+    padding: 0;
+    width: 90%;
+    height: 60%;
+  }
+  .swiper-pagination {
+    top: 235px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    display: flex;
+    position: relative;
+  }
+  #container02 .box h1{
+      padding-left: 120px;
+      padding-right: 100px;
+  }
+  #container02 .box p{
+    width: 27%;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #container02 .box .read-box{
+    margin-left: 120px;
+    margin-right: 100px;
+  }
+  #wen .line{
+    width: 0;
+    height: 149px;
+    top: 37%;
+    left: 14px;
+  }
+  #container02 .box .p-box{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  /* 內容3 */
+  #container03 .box{
+    left: 50%;
+    width: 500px;
+  }
+
+  /* 內容5 */
+  #container05  p{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 內容6 */
+  #container06 h1{
+    font-size: 60px;
+  }
+  #container06 .text-box{
+    width: 1300px;
+    margin: auto;
+  }
+  #container06 .text-box .num{
+    width: 25%;
+    margin-top: 0px;
+  }
+
+  #container06 .text-box .num h1{
+    font-size: 150px;
+  }
+
+  #container06 .text-box .num p{
+    width: 70%;
+    margin: auto;
+  }
+
+  #container06 .text-box .line01{
+    height: 260px;
+  }
+  #container06 .text-box .line02{
+    height: 260px;
+  }
+  #container06 .text-box .line03{
+    height: 260px;
+  }
+
+  /* 內容7 */
+  #container07 .box {
+    width: 1300px;
+    margin: auto;
+  }
+
+  #container07 .box .news{
+    margin: 20px;
+    width: 1300px;
+    margin: auto;
+  }
+  #container07 .box .img-box{
+
+  }
+  #container07 .box .news img{
+    float: left;
+    margin: 20px;
+  }
+
+  #container07 .read-box{
+    clear: left;
+  }
+
+  #container07 .box p{
+    margin-bottom: 117px;
+  }
+
+  /* 內容8 */
+  #container08{
+    padding: 400px 300px ;
+  }
+
+  /* 內容10 */
+  #container010{
+    height: 50vh;
+  }
+
+  #container010 .box{
+    width: 70%;
+    margin: auto;
+  }
 }

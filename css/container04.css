@@ -590,3 +590,98 @@
       font-family: '微軟正黑體';
       font-size: 16px;
     }
+
+
+    /* 505 以上-------------------------------------------- */
+@media (min-width:765px) {
+
+  /* 內容04 */
+  #container04{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  #container04 .box1{
+    width: 50%;
+  }
+
+  #container04 .box2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #container04 .box2 .box2-1{
+    width: 50%;
+    height: 50%;
+  }
+  #container04 .box2 .box2-2{
+    width: 50%;
+    height: auto;
+    z-index: 10;
+  }
+  #container04 .box2 .box2-3{
+    width: 50%;
+    height: auto;
+  }
+  #container04 .box2 .box2-4{
+    width: 50%;
+    height: 50%;
+  }
+
+  #container04 .box2 .box2-2::before{
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  #container04 .box2 .box2-3::before{
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+
+  #container04 .box3{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #container04 .box3 .box3-1{
+    width: 50%;
+    height: 50%;
+  }
+  #container04 .box3 .box3-2{
+    width: 50%;
+    height: auto;
+    z-index: 10;
+  }
+  #container04 .box3 .box3-3{
+    width: 50%;
+    height: auto;
+  }
+  #container04 .box3 .box3-4{
+    width: 50%;
+    height: 50%;
+  }
+
+  #container04 .box3 .box3-2::before{
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  #container04 .box3 .box3-3::before{
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  #container04 .box4{
+    width: 50%;
+  }
+}
